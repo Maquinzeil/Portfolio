@@ -186,6 +186,7 @@ span {
     margin: 2rem 0 3rem;
 }
 
+/* Work Flow Design */
 
 #smm-workflow {
   padding: 40px;
@@ -212,7 +213,38 @@ span {
   padding-left: 20px;
 }
 
+/* Target the h3 inside the card */
+.workflow-card h3 {
+  position: relative;
+  top: 0;
+  transition: top 0.4s ease, color 0.3s ease;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #0077cc;
+}
 
+/* On card hover, slide the h3 down */
+.workflow-card:hover h3 {
+  top: 10px;
+  color: #005299;
+}
+
+.workflow-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workflow-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Services */
 .services {
     background: var(--snd-bg-color);
     padding-bottom: 7%;
