@@ -186,6 +186,33 @@ span {
     margin: 2rem 0 3rem;
 }
 
+
+#smm-workflow {
+  padding: 40px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+#smm-workflow h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #0066cc;
+}
+
+#smm-workflow h3 {
+  font-size: 20px;
+  margin-top: 25px;
+  color: #444;
+}
+
+#smm-workflow ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+
 .services {
     background: var(--snd-bg-color);
     padding-bottom: 7%;
