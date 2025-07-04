@@ -229,7 +229,7 @@ span {
   overflow: hidden;
   transition:
     max-height 0.5s ease,
-    opacity 0.1s ease,
+    opacity 0.2s ease 0.2,
     transform 0.5s ease;
   padding-top: 0;
   padding-bottom: 0;
