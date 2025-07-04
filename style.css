@@ -224,12 +224,15 @@ span {
 
 .workflow-content {
   max-height: 0;
+  opacity: 0;
   overflow: hidden;
-  transition: max-height 0.1s ease-out;
+  transition: max-height 0.4s ease-out, opacity 0.3s ease-out;
+
 }
 
 .workflow-card.show-content .workflow-content {
-  max-height: 300px; /* adjust based on your content */
+  max-height: 200px; /* adjust based on your content */
+  opacity: 1;
 }
 
 .more-btn {
