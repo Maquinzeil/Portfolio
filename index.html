@@ -75,53 +75,61 @@
     <div class="workflow-card">
       <h3>1. Set Your Goals 🎯</h3>
       <p>Define what you want to achieve (followers, engagement, sales). Make goals SMART: Specific, Measurable, Achievable, Relevant, Time-bound.</p>
+      <button class="more-btn">More</button>
     </div>
-
+    <button class="more-btn">More</button>
     <div class="workflow-card">
       <h3>2. Know Your Audience 👥</h3>
       <p>Understand who you're targeting: age, interests, behavior. Analyze competitors' audiences and engagement patterns.</p>
+      <button class="more-btn">More</button>
     </div>
-
+    <button class="more-btn">More</button>
     <div class="workflow-card">
       <h3>3. Pick Your Platforms 📱</h3>
       <p>Focus on the best channels for your audience (Instagram, TikTok, Facebook). Start with 1–2 platforms.</p>
+      <button class="more-btn">More</button>
     </div>
-
+    <button class="more-btn">More</button>
     <div class="workflow-card">
       <h3>4. Create a Content Plan 🗓️</h3>
       <p>Choose weekly themes or content pillars. Use planning tools like Google Sheets, Notion, or Trello to map it out.</p>
+      <button class="more-btn">More</button>
     </div>
-
+    <button class="more-btn">More</button>
     <div class="workflow-card">
       <h3>5. Design Your Content 🎨</h3>
       <p>Use tools like Canva or CapCut. Stick to your brand's style: fonts, colors, logos.</p>
+      <button class="more-btn">More</button>
     </div>
-
+    <button class="more-btn">More</button>
     <div class="workflow-card">
       <h3>6. Write Captions + Hashtags ✍️</h3>
       <p>Use engaging captions: Hook + Value + CTA. Add 10–15 strategic hashtags per post.</p>
+      <button class="more-btn">More</button>
     </div>
-
+    <button class="more-btn">More</button>
     <div class="workflow-card">
       <h3>7. Schedule Posts 📤</h3>
       <p>Batch and schedule using Meta Business Suite or Buffer. Pick optimal times for publishing.</p>
+      <button class="more-btn">More</button>
     </div>
-
+    <button class="more-btn">More</button>
     <div class="workflow-card">
       <h3>8. Engage Daily 💬</h3>
       <p>Respond to comments and DMs, engage with other accounts, and post Stories or polls regularly.</p>
+      <button class="more-btn">More</button>
     </div>
-
+    <button class="more-btn">More</button>
     <div class="workflow-card">
       <h3>9. Track Performance 📊</h3>
       <p>Use Instagram Insights or Metricool to monitor reach, engagement, and follower growth.</p>
     </div>
-
+    <button class="more-btn">More</button>
     <div class="workflow-card">
       <h3>10. Adjust & Improve 🔄</h3>
       <p>Focus on content that works best. Update your strategy monthly and test new formats.</p>
     </div>
-
+    <button class="more-btn">More</button>
   </div>
 </section>
 
@@ -327,5 +335,16 @@
 
     <!-- MAIN JS-->
     <script src="main.js"></script>
+    <script>
+  const buttons = document.querySelectorAll('.more-btn');
+
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const card = btn.closest('.workflow-card');
+      card.classList.toggle('show-content');
+      btn.textContent = card.classList.contains('show-content') ? 'Less' : 'More';
+    });
+  });
+</script>
 </body>
 </html>
