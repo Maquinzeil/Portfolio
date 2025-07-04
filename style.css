@@ -225,7 +225,7 @@ span {
 .workflow-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease-out;
+  transition: max-height 0.1s ease-out;
 }
 
 .workflow-card.show-content .workflow-content {
