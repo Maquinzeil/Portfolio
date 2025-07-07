@@ -259,12 +259,16 @@ span {
 
 /* CLIENT JOURNEY */
 
+.client-journey-section {
+  padding: 40px;
+  background-color: #191f36;; /* 👈 light blue example */
+  font-family: 'Segoe UI', sans-serif;
+}
 .client-journey-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  background-color: #0066cc;
 }
 
 .journey-box {
