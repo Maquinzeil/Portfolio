@@ -264,6 +264,7 @@ span {
   background-color: #191f36;; /* 👈 light blue example */
   font-family: 'Segoe UI', sans-serif;
   text-align: center;
+  font-size: 50px;
 }
 .client-journey-container {
   display: flex;
@@ -279,7 +280,6 @@ span {
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center;
 }
 
 .journey-box:hover {
