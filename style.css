@@ -292,9 +292,10 @@ span {
 }
 
 .journey-box p {
-  font-size: 14px;
-  color: #444;
+  font-size: 30px;
+  color: #ffffff;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .journey-box .btn {
