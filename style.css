@@ -265,6 +265,7 @@ span {
   font-family: 'Segoe UI', sans-serif;
   text-align: center;
   font-size: 50px;
+  color: #ffffff;
 }
 .client-journey-container {
   display: flex;
