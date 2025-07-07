@@ -263,6 +263,7 @@ span {
   padding: 40px;
   background-color: #191f36;; /* 👈 light blue example */
   font-family: 'Segoe UI', sans-serif;
+  text-align: center;
 }
 .client-journey-container {
   display: flex;
@@ -295,7 +296,6 @@ span {
   font-size: 30px;
   color: #ffffff;
   margin-bottom: 20px;
-  text-align: center;
 }
 
 .journey-box .btn {
