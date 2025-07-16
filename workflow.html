@@ -92,5 +92,26 @@
 
   </div>
 </section>
+
+  <!-- SCROLL REVEAL JS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- TYPED JS-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- MAIN JS-->
+    <script src="main.js"></script>
+    <script>
+  const buttons = document.querySelectorAll('.more-btn');
+
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const card = btn.closest('.workflow-card');
+      card.classList.toggle('show-content');
+      btn.textContent = card.classList.contains('show-content') ? 'Less' : 'More';
+    });
+  });
+</script>
+
 </body>
 </html>
