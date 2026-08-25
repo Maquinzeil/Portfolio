@@ -1,75 +1,40 @@
-/*====================================== toggle icon navbar ======================================*/
+const menuIcon = document.querySelector('#menu-icon');
+const navbar = document.querySelector('.navbar');
 
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+menuIcon?.addEventListener('click', () => {
+    const isOpen = navbar.classList.toggle('active');
+    menuIcon.innerHTML = isOpen ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+    menuIcon.setAttribute('aria-expanded', String(isOpen));
+    menuIcon.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+});
 
-menuIcon.onclick = () => {
-    menuIcon.classList.toggle('fa-xmark');
-    navbar.classList.toggle('active');
-}
-
-/*====================================== scroll section active link ======================================*/
-
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
-
-window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
-
-        if(top >= offset && top < offset + height) {
-            navLinks.forEach(link => {
-    link.classList.remove('active');
-    if (link.getAttribute('href') === `#${id}`) {
-        link.classList.add('active');
-    }
-});           
-        };
+document.querySelectorAll('.navbar a').forEach(link => {
+    link.addEventListener('click', () => {
+        navbar.classList.remove('active');
+        menuIcon.innerHTML = '<i class="fa-solid fa-bars"></i>';
+        menuIcon.setAttribute('aria-expanded', 'false');
+        menuIcon.setAttribute('aria-label', 'Open navigation');
     });
+});
 
-    /*====================================== sticky navbar ======================================*/
-    let header = document.querySelector('header');
-    header.classList.toggle('sticky', window.scrollY > 100);
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.navbar a');
 
-    /*====================================== remove toggle icon and navbar ======================================*/
-    menuIcon.classList.remove('fa-xmark');
-    navbar.classList.remove('active');
-
+const updateActiveNav = () => {
+    const scrollPosition = window.scrollY + 180;
+    let currentId = 'home';
+    sections.forEach(section => {
+        if (scrollPosition >= section.offsetTop) currentId = section.id;
+    });
+    navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === `#${currentId}`));
 };
 
+window.addEventListener('scroll', updateActiveNav, { passive: true });
+updateActiveNav();
 
-/*====================================== scroll reveal ======================================*/
-ScrollReveal({
-    distance: '80px',
-    duration: 2000,
-    delay: 200,
-});
-
-ScrollReveal().reveal('.home-content, heading', { origin: 'top'});
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
-ScrollReveal().reveal('.home-contact h1, .about-img', { origin: 'left'});
-ScrollReveal().reveal('.home-contact p, .about-content', { origin: 'right' });
-
-/*============================== typed js ======================================*/
-
-const typed = new Typed('.multiple-text', {
-    strings: ['Social Media Manager', 'Video Editor'],
-    typeSpeed: 90,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true,
-});
-
-const typedAbout = new Typed('.about .multiple-text', {
-    strings: ['Mircosoft Tools', 'Google Workspace', 'Notion', 'Canva', 'ClickFunnels', 'Hootsuite', 'Metricool', 'WordPress', 'Wix', 'HTML', 'CSS', 'ChatGPT'],
-    typeSpeed: 20,
-    backSpeed: 10,
-    backDelay: 900,
-    loop: true,
-});
-
-document.querySelector('.about .multiple-text').style.fontWeight = 'bold';
-
+if (window.ScrollReveal) {
+    ScrollReveal({ distance: '45px', duration: 900, delay: 100, reset: false, easing: 'ease-out' });
+    ScrollReveal().reveal('.reveal-left', { origin: 'left' });
+    ScrollReveal().reveal('.reveal-right', { origin: 'right' });
+    ScrollReveal().reveal('.journey-box, .services-box, .portfolio-box, .case-study-card, .contact form', { origin: 'bottom', interval: 90 });
+}
