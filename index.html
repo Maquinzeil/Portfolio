@@ -3,304 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!--FONT AWESOME-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!--MAIN CSS-->
+    <meta name="description" content="Jasper Ramos - Social Media Manager and Virtual Assistant helping businesses create, organize, and manage consistent social media content.">
+    <meta name="theme-color" content="#191f36">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+    <title>Jasper Ramos | Social Media Manager & Virtual Assistant</title>
 </head>
 <body>
-    <!--HEADER DESIGN-->
     <header class="header">
-        <img src="img/logowhite.png" class="logo">
-
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-
-        <nav class="navbar">
+        <a href="#home" class="logo-link" aria-label="Jasper Ramos home"><img src="img/logowhite.png" class="logo" alt="Jasper Ramos"></a>
+        <button class="menu-toggle" id="menu-icon" aria-label="Open navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+        <nav class="navbar" aria-label="Primary navigation">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
-            <a href="#client-journey">Client Journey</a>
+            <a href="#client-journey">Process</a>
             <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#portfolio">Work</a>
             <a href="#contact">Contact</a>
-
         </nav>
-
     </header>
 
-<!-- HOME SECTION DESIGN-->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hi, There!</h3>
-            <h1>Jasper Ramos</h1>
-            <h3>And I'm a <span class="multiple-text"></span></h3>
-            <p>Your go-to Social Media Maestro! With a flair for captivating content and a knack for boosting engagement, I'm here to make your online presence shine. Ready to take your social media game to the next level? </p>
-            <div class="social-media">
-                <a href="https://www.facebook.com/ramosjasper22" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/maquinzeil22/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/jasper-maquinzeil-ramos-a92637262/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <main>
+        <section class="home" id="home">
+            <div class="home-content reveal-left">
+                <p class="eyebrow">SOCIAL MEDIA MANAGEMENT • VIRTUAL ASSISTANCE</p>
+                <h1>Helping businesses <span>show up consistently</span> online.</h1>
+                <p class="hero-copy">I create, organize, and manage social media content so you can spend more time running your business and less time worrying about what to post next.</p>
+                <div class="hero-actions">
+                    <a href="#portfolio" class="btn">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-outline">Let's Work Together</a>
+                </div>
+                <div class="social-media" aria-label="Social links">
+                    <a href="https://www.facebook.com/ramosjasper22" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/maquinzeil22/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/jasper-maquinzeil-ramos-a92637262/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="img/Jasper Ramos(SMM).pdf.pdf" class="text-link" download>Download my CV <i class="fa-solid fa-download"></i></a>
             </div>
-            <a href="img/Jasper Ramos(SMM).pdf.pdf" class="btn" download>Download CV</a>
-        </div>
-
-        <div class="home-img">
-            <img src="img/picture.png" alt="">
-        </div>
-    </section>
-
-
-
-<!-- ABOUT SECTION DESIGN-->
-<section class="about" id="about">
-    <div class="about-img">
-        <img src="img/aboutme.png" alt="">
-    </div>
-
-    <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <h3>Social Media Manager</h3>
-        <p>Hello! I'm Jasper, a dedicated and innovative Social Media Manager with a passion for creating impactful digital experiences. Over the years, I have honed my abilities through diverse experiences, from completing a programming certificate at Misamis Oriental in the Philippines to expanding my knowledge at Brigham Young University Pathway. My technical proficiency includes a robust command of : <span class="multiple-text"></span></p>
-    </div>
-</section>
-
-
-<!-- CLIENT JOURNEY SECTION DESIGN-->
-
-<section id="client-journey" class="client-journey-section">
-  <h2 class="workflow-title">Client Journey</h2>
-
-  <div class="client-journey-container">
-    <!-- Workflow Box -->
-    <a href="workflow.html" class="journey-box-link">
-      <div class="journey-box">
-        <h3>Workflow</h3>
-        <p>Step-by-step breakdown of how I manage social media for clients.</p>
-        <button class="btn">View Workflow</button>
-      </div>
-    </a>
-
-    <!-- Onboarding Box -->
-    <a href="onboarding.html" class="journey-box-link">
-      <div class="journey-box">
-        <h3>Onboarding</h3>
-        <p>Everything that happens from discovery call to full onboarding.</p>
-        <button class="btn">View Onboarding</button>
-      </div>
-    </a>
-  </div>
-</section>
-
-<!-- SERVICE SECTION DESIGN-->
-    <section class="services" id="services">
-        <h2 class="heading">My <span>Services</span></h2>
-
-        <div class="services-container">
-            <div class="services-box">               
-                <i class="fa-solid fa-pen-to-square"></i>
-                <h3>STARTER PACKAGE $200</h3>
-                <p>Strategy Board</p>
-                <p>Content Creation: Up to 13 posts</p>
-                <p>Feed/Story: 13</p>
-                <p>(What is posted in feed also posted in Story)</p>
-                <p>1 Platform</p>
-                <p>Captioning</p>
-                <p>Content Plan and Calendar Presentation</p>
-                <p>Scheduling of Posts</p>
-                <h4>Note: All Contents will be compiled and sent to the client</h4>
+            <div class="home-img reveal-right">
+                <div class="hero-glow"></div>
+                <img src="img/picture.png" alt="Jasper Ramos, Social Media Manager">
             </div>
+        </section>
 
-            <div class="services-box">
-                <i class="fa-solid fa-comment"></i>
-                <h3>NECESSARY PACKAGE $250</h3>
-                <p>Strategy Board</p>
-                <p>Content Creation: Up to 17 posts</p>
-                <p>Feed/Story: 17</p>
-                <p>(What is posted in feed also posted in Story)</p>
-                <p>2 Platform</p>
-                <p>Captionings (1 FB + 1 IG) </p>
-                <p>Content Plan and Calendar Presentation</p>
-                <p>Scheduling of Posts</p>
-                <h4>Note: All Contents will be compiled and sent to the client</h4>
-            </div>
-
-            <div class="services-box">
-                <i class="fa-solid fa-chart-simple"></i>
-                <h3>ENHANCED PACKAGE $300</h3>
-                <p>Strategy Board</p>
-                <p>Content Creation: Up to 21 posts</p>
-                <p>Feed/Story: 21</p>
-                <p>(What is posted in feed also posted in Story)</p>
-                <p>2 Platform</p>
-                <p>Captionings (1 FB + 1 IG) </p>
-                <p>Content Plan and Calendar Presentation</p>
-                <p>Scheduling of Posts</p>
-                <h4>Note: All Contents will be compiled and sent to the client</h4>
-            </div>
-
-            <div class="services-box">
-                <i class="fa-solid fa-pen-to-square"></i>
-                <h3>ADVANCE PACKAGE $350</h3>
-                <p>Strategy Board</p>
-                <p>Content Creation: Up to 32 posts per month</p>
-                <p>Feed/Story: 28 per month</p>
-                <p>(What is posted in feed also posted in Story)</p>
-                <p>Reels 4 per month</p>
-                <p>2 Platform</p>
-                <p>Captionings (1 FB + 1 IG) </p>
-                <p>Content Plan and Calendar Presentation</p>
-                <p>Scheduling of Posts</p>
-                <br>
-                <br>
-                <br>
-                <h4>Note: All Contents will be compiled and sent to the client</h4>
-            </div>
-
-            <div class="services-box">
-                <i class="fa-solid fa-comment"></i>
-                <h3>PREMIUM PACKAGE $400</h3>
-                <p>Strategy Board</p>
-                <p>Content Creation: Up to 38 posts per month</p>
-                <p>Feed/Story: 33 per month</p>
-                <p>(What is posted in feed also posted in Story)</p>
-                <p>Reels Creation: 5 per month</p>
-                <p>2 Platform</p>
-                <p>Captionings (1 FB + 1 IG) </p>
-                <p>Content Plan and Calendar Presentation</p>
-                <p>Scheduling of Posts</p>
-                <p>Community Engagement and Hashtag Optimization</p>
-                <h4>Note: All Contents will be compiled and sent to the client</h4>
-            </div>
-
-            <div class="services-box">
-                <i class="fa-solid fa-chart-simple"></i>
-                <h3>VIP PACKAGE $450</h3>
-                <p>Strategy Board</p>
-                <p>Content Creation: Up to 49 posts per month</p>
-                <p>Feed/Story: 43 per month</p>
-                <p>(What is posted in feed also posted in Story)</p>
-                <p>Reels Creation: 6 per month</p>
-                <p>2 Platform</p>
-                <p>Captionings (1 FB + 1 IG) </p>
-                <p>Content Plan and Calendar Presentation</p>
-                <p>Scheduling of Posts</p>
-                <p>Community Engagement and Hashtag Optimization</p>
-                <h4>Note: All Contents will be compiled and sent to the client</h4>
-            </div>
-        </div>
-    </section>
-
-    <!-- PORTFOLIO SECTION DESIGN-->
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Projects</span></h2>
-
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="img/Portfolio1.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Feed Post</h4>
-                    
+        <section class="about section-light" id="about">
+            <div class="about-img reveal-left"><img src="img/aboutme.png" alt="Jasper Ramos working on social media content"></div>
+            <div class="about-content reveal-right">
+                <p class="eyebrow">A LITTLE ABOUT ME</p>
+                <h2 class="heading">Your content partner, <span>not just a poster.</span></h2>
+                <p>I’m Jasper, a Social Media Manager and Virtual Assistant focused on helping businesses stay consistent, organized, and visible online.</p>
+                <p>My background in programming and digital tools gives me a practical technical edge. I combine content planning, Canva design, video editing, scheduling, community support, and everyday business tools to keep social media moving.</p>
+                <div class="skills-grid">
+                    <span>Canva</span><span>CapCut</span><span>Metricool</span><span>Google Workspace</span><span>Microsoft Office</span><span>WordPress</span><span>ClickFunnels</span><span>ChatGPT</span>
                 </div>
             </div>
+        </section>
 
-            <div class="portfolio-box">
-                <img src="img/Portfolio2.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Feed Post</h4>
-                    
+        <section class="client-journey-section" id="client-journey">
+            <div class="section-heading">
+                <p class="eyebrow">MY PROCESS</p>
+                <h2 class="heading">Simple process. <span>Clear communication.</span></h2>
+                <p>From the first conversation to scheduled content, I keep the workflow organized and easy to follow.</p>
+            </div>
+            <div class="journey-grid">
+                <a href="onboarding.html" class="journey-box">
+                    <span class="journey-number">01</span>
+                    <i class="fa-solid fa-handshake"></i>
+                    <h3>Discovery & Onboarding</h3>
+                    <p>We discuss your goals, audience, brand voice, platforms, content needs, and workflow.</p>
+                    <span class="card-link">Explore onboarding <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+                <a href="workflow.html" class="journey-box">
+                    <span class="journey-number">02</span>
+                    <i class="fa-solid fa-list-check"></i>
+                    <h3>Strategy & Content</h3>
+                    <p>I turn your goals into content ideas, captions, visuals, reels, and a practical content calendar.</p>
+                    <span class="card-link">See my workflow <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+                <div class="journey-box">
+                    <span class="journey-number">03</span>
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <h3>Schedule & Support</h3>
+                    <p>Content is prepared, reviewed, scheduled, and supported with engagement and organization.</p>
+                    <span class="card-link">Built for consistency <i class="fa-solid fa-check"></i></span>
                 </div>
             </div>
+        </section>
 
-            <div class="portfolio-box">
-                <img src="img/Portfolio3.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Feed Post</h4>
-                    
-                </div>
+        <section class="services" id="services">
+            <div class="section-heading light-heading">
+                <p class="eyebrow">WHAT I CAN DO FOR YOU</p>
+                <h2 class="heading">Services that keep your <span>social media moving.</span></h2>
+                <p>Choose the level of support that fits your current needs. Packages can also be customized.</p>
             </div>
-
-            <div class="portfolio-box">
-                <video src="img/Portfolio4.mp4" autoplay muted loop></video>
-                <div class="portfolio-layer">
-                    <h4>Reels Post</h4>
-                    
-                </div>
+            <div class="services-container">
+                <article class="services-box">
+                    <div class="service-icon"><i class="fa-solid fa-seedling"></i></div>
+                    <p class="package-label">STARTER</p>
+                    <h3>$200 <small>/ month</small></h3>
+                    <p class="service-description">A simple foundation for businesses that need consistent content.</p>
+                    <ul><li>Content strategy board</li><li>Up to 13 posts</li><li>1 platform</li><li>Captions & content calendar</li><li>Post scheduling</li></ul>
+                </article>
+                <article class="services-box featured-package">
+                    <div class="popular-badge">MOST POPULAR</div>
+                    <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <p class="package-label">GROWTH</p>
+                    <h3>$300 <small>/ month</small></h3>
+                    <p class="service-description">More content and platform support for businesses ready to grow.</p>
+                    <ul><li>Content strategy board</li><li>Up to 21 posts</li><li>2 platforms</li><li>Captions & content calendar</li><li>Post scheduling</li><li>Reels support</li></ul>
+                </article>
+                <article class="services-box">
+                    <div class="service-icon"><i class="fa-solid fa-rocket"></i></div>
+                    <p class="package-label">PREMIUM</p>
+                    <h3>$400 <small>/ month</small></h3>
+                    <p class="service-description">Fuller social media support for brands that want consistency plus engagement.</p>
+                    <ul><li>Up to 38 posts</li><li>2 platforms</li><li>5 reels per month</li><li>Captions & content calendar</li><li>Scheduling</li><li>Community engagement & hashtag optimization</li></ul>
+                </article>
             </div>
+            <p class="package-note">Need something different? I can build a custom package around your platforms, content volume, and workflow.</p>
+        </section>
 
-            <div class="portfolio-box">
-                <video src="img/Portfolio5.mp4" autoplay muted loop></video>
-                <div class="portfolio-layer">
-                    <h4>Reels Post</h4>
-                    
-                </div>
+        <section class="portfolio" id="portfolio">
+            <div class="section-heading">
+                <p class="eyebrow">SELECTED WORK</p>
+                <h2 class="heading">Content that is <span>made to be used.</span></h2>
+                <p>A look at the type of social content, reels, and campaign planning I can create and manage.</p>
             </div>
-
-            <div class="portfolio-box">
-                <video src="img/Portfolio6.mp4" autoplay muted loop></video>
-                <div class="portfolio-layer">
-                    <h4>Reels Post</h4>
-                    
-                </div>
+            <div class="portfolio-container">
+                <article class="portfolio-box"><img src="img/Portfolio1.jpg" alt="Social media feed post design"><div class="portfolio-layer"><p>Social Media</p><h3>Feed Post</h3><span>Canva design • Captioning</span></div></article>
+                <article class="portfolio-box"><img src="img/Portfolio2.jpg" alt="Social media content design"><div class="portfolio-layer"><p>Social Media</p><h3>Feed Post</h3><span>Content creation • Branding</span></div></article>
+                <article class="portfolio-box"><img src="img/Portfolio3.jpg" alt="Social media wellness post"><div class="portfolio-layer"><p>Social Media</p><h3>Feed Post</h3><span>Visual content • Copy</span></div></article>
+                <article class="portfolio-box"><video src="img/Portfolio4.mp4" autoplay muted loop playsinline aria-label="Social media reel example"></video><div class="portfolio-layer"><p>Short-form Video</p><h3>Reel</h3><span>Editing • Captions • Hooks</span></div></article>
+                <article class="portfolio-box"><video src="img/Portfolio5.mp4" autoplay muted loop playsinline aria-label="Social media reel example"></video><div class="portfolio-layer"><p>Short-form Video</p><h3>Reel</h3><span>Editing • Storytelling</span></div></article>
+                <article class="portfolio-box"><video src="img/Portfolio6.mp4" autoplay muted loop playsinline aria-label="Social media reel example"></video><div class="portfolio-layer"><p>Short-form Video</p><h3>Reel</h3><span>Editing • Social-first format</span></div></article>
             </div>
+        </section>
 
-        </div>
-    </section>
-
-    <!-- CONTACT SECTION DESIGN-->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-
-        <form action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="30d10041-7b98-41a4-84b8-e713680d9eb9">
-            <div class="input-box">  
-                <input type="text" name="Full Name" placeholder="Full Name">
-                <input type="text" name="Email Address"placeholder="Email Address">
+        <section class="case-study" id="case-study">
+            <div class="section-heading light-heading">
+                <p class="eyebrow">PORTFOLIO DEMONSTRATION</p>
+                <h2 class="heading">Sample <span>case study.</span></h2>
+                <p>No client analytics were available for this section, so the metrics below are clearly labeled as demonstration values. The focus is on showing how I present strategy, deliverables, and campaign work.</p>
             </div>
+            <div class="case-study-card"><img src="img/sample-case-study.svg" alt="Sample social media case study graphic with demonstration metrics and campaign deliverables"></div>
+        </section>
 
-            <div class="input-box">
-                <input type="text" name="Mobile Number" placeholder="Mobile Number">
-                <input type="text" name="Subject" placeholder="Email Subject">
+        <section class="contact" id="contact">
+            <div class="section-heading light-heading">
+                <p class="eyebrow">LET'S TALK</p>
+                <h2 class="heading">Have content to <span>take off your plate?</span></h2>
+                <p>Tell me a little about your business and what you need help with.</p>
             </div>
-            <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
-    </section>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="30d10041-7b98-41a4-84b8-e713680d9eb9">
+                <input type="hidden" name="subject" value="New portfolio inquiry">
+                <div class="input-box"><input type="text" name="Full Name" placeholder="Full Name" autocomplete="name" required><input type="email" name="Email Address" placeholder="Email Address" autocomplete="email" required></div>
+                <div class="input-box"><input type="tel" name="Mobile Number" placeholder="Mobile Number" autocomplete="tel"><input type="text" name="Subject" placeholder="What do you need help with?"></div>
+                <textarea name="Message" rows="8" placeholder="Tell me about your business, platforms, and goals..." required></textarea>
+                <button type="submit" class="btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </section>
+    </main>
 
-    <!-- FOOTER DESIGN -->
-    
     <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2024 @JasperRamos | All Rights Reserved.</p>
-            
-        </div>
-        <div class="footer-text">
-            <a href="https://mail.google.com/" target="_blank"><span>Email: </span>jasper.ramos.va@gmail.com</a>
-        </div>
-        <div class="footer-iconTop">
-            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
-        </div>
+        <div><p>© 2026 Jasper Ramos. All Rights Reserved.</p><a href="mailto:jasper.ramos.va@gmail.com">jasper.ramos.va@gmail.com</a></div>
+        <div class="footer-links"><a href="https://www.facebook.com/ramosjasper22" target="_blank" rel="noopener noreferrer">Facebook</a><a href="https://www.instagram.com/maquinzeil22/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.linkedin.com/in/jasper-maquinzeil-ramos-a92637262/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+        <a class="footer-top" href="#home" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
     </footer>
 
-
-    <!-- SCROLL REVEAL JS -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- TYPED JS-->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-    <!-- MAIN JS-->
     <script src="main.js"></script>
-    <script>
-  const buttons = document.querySelectorAll('.more-btn');
-
-  buttons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const card = btn.closest('.workflow-card');
-      card.classList.toggle('show-content');
-      btn.textContent = card.classList.contains('show-content') ? 'Less' : 'More';
-    });
-  });
-</script>
 </body>
 </html>
